@@ -5,10 +5,15 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "parser",
+    "news",
+    "nodejs",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "News parser built with Node.js",
   "dependencies": {
     "axios": "^1.8.4",
     "cheerio": "^1.0.0",
