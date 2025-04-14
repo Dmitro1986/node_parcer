@@ -29,6 +29,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Главная страница
 app.get('/', async (req, res) => {
   const url = 'https://meduza.io/';
+  // const url = 'https://deadline.com/';
   try {
     const { data } = await axios.get(url, {
       headers: {
@@ -46,6 +47,7 @@ app.get('/', async (req, res) => {
 
       if (title && href && href.startsWith('/') && (href.includes('feature/') || href.includes('news/'))) {
         news.push({ title, link: 'https://meduza.io' + href });
+        // news.push({ title, link: 'https://deadline.com' + href });
       }
     });
 
