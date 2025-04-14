@@ -5,9 +5,21 @@ html
     title Новости с Meduza
     link(rel="stylesheet", href="/style.css")
   body
-    h1 Новости с Meduza
-    ul
-      each item, i in news
-        - const delayClass = 'delay-' + (i < 5 ? i + 1 : 5)
-        li(class=delayClass)
-          a(href=item.link, target="_blank")= item.title
+  .layout
+    aside.sidebar
+      .globe-container
+        .globe
+          .globe-sphere
+          .globe-outer-shadow
+          .globe-worldmap
+            .globe-worldmap-back
+            .globe-worldmap-front
+          .globe-inner-shadow
+
+    main.content
+      h1 Новости с Meduza
+      ul
+        each item, i in news
+          - const delayClass = 'delay-' + (i < 5 ? i + 1 : 5)
+          li(class=delayClass)
+            a(href=item.link, target="_blank")= item.title

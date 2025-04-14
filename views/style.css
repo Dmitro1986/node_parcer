@@ -58,7 +58,7 @@
   width: 1000px;
   height: 200px;
   overflow: visible;
-  background-image: url(../public/img/worldmap.svg);
+  background-image: url(./img/worldmap.svg);
   background-repeat: no-repeat;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .globe-inner-shadow {
-  background-image: url(../public/img/inner_shadow.svg);
+  background-image: url(../public/img/i);
 }
 
 .globe-worldmap-front {
