@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Новости с Meduza
+    link(rel="stylesheet", href="/style.css")
+  body
+    h1 Новости с Meduza
+    ul
+      each item, i in news
+        - const delayClass = 'delay-' + (i < 5 ? i + 1 : 5)
+        li(class=delayClass)
+          a(href=item.link, target="_blank")= item.title

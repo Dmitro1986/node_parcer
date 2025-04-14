@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "parser",
@@ -17,6 +18,12 @@
   "dependencies": {
     "axios": "^1.8.4",
     "cheerio": "^1.0.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "pug": "^3.0.3",
+    "sass": "^1.86.3",
+    "sass-middleware": "^0.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
